@@ -189,30 +189,19 @@ export const MessageBubble = memo(function MessageBubbleComponent({
                 li: ({ node, ...props }) => (
                   <li style={{ marginBottom: '0.25rem' }} {...props} />
                 ),
-                code: ({ node, inline, ...props }) =>
-                  inline ? (
-                    <code
-                      style={{
-                        fontFamily: 'monospace',
-                        backgroundColor: 'rgba(0,0,0,0.05)',
-                        padding: '0.1rem 0.3rem',
-                        borderRadius: '0.2rem',
-                      }}
-                      {...props}
-                    />
-                  ) : (
-                    <code
-                      style={{
-                        display: 'block',
-                        overflow: 'auto',
-                        padding: '0.5rem',
-                        backgroundColor: 'rgba(0,0,0,0.05)',
-                        borderRadius: '0.3rem',
-                        fontFamily: 'monospace',
-                      }}
-                      {...props}
-                    />
-                  ),
+                code: ({ node, ...props }) => (
+                  <code
+                    style={{
+                      display: 'block',
+                      overflow: 'auto',
+                      padding: '0.5rem',
+                      backgroundColor: 'rgba(0,0,0,0.05)',
+                      borderRadius: '0.3rem',
+                      fontFamily: 'monospace',
+                    }}
+                    {...props}
+                  />
+                ),
                 pre: ({ node, ...props }) => (
                   <pre
                     style={{

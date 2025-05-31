@@ -23,9 +23,7 @@ type UserPreferences = {
 // Create the context with initial undefined value
 type PreferencesContextType = {
   preferences: UserPreferences;
-  setPreferences: (
-    value: UserPreferences | ((val: UserPreferences) => UserPreferences)
-  ) => void;
+  setPreferences: any;
 };
 
 const PreferencesContext = createContext<PreferencesContextType | undefined>(

@@ -17,7 +17,7 @@ let globalToast: ToastFunction | null = null;
 /**
  * Set the global toast function
  */
-export function setGlobalToast(toastFn: ToastFunction | null) {
+export function setGlobalToast(toastFn: any) {
   globalToast = toastFn;
 }
 

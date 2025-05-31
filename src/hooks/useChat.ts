@@ -159,8 +159,6 @@ export function useChat() {
         });
 
         return newSession;
-
-        return newSession;
       } catch (err) {
         console.error('Error creating new session:', err);
         setError('Failed to create a new chat session');
